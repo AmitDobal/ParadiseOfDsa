@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class SortingTestMain {
 	public static void main(String[] args) {
 
-		int[] arr = { 3, 44, 38, 5, 47, 50, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48 };
+		int[] arr = { 3, 1, 6, 5,2,2,2, 47, 50, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48 };
 		List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
 		// Before
 		System.out.println("Before: ");
@@ -18,7 +18,8 @@ public class SortingTestMain {
 
 		// Sorting Algo
 //		BubbleSort.sort(arr);
-		SelectionSort.sort(arr);
+//		SelectionSort.sort(arr, -1);
+		InsertionSort.sort(arr);
 
 		// After
 		System.out.println("\nAfter: ");
