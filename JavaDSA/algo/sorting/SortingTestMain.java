@@ -12,11 +12,12 @@ public class SortingTestMain {
 		// Before
 		System.out.println("Before: ");
 		Arrays.stream(arr).forEach(e -> System.out.print(e + " "));
-
+		
+		//Using Stream to get sorted for comparing the answer
 		System.out.println("\n Collection SOrt: ");
 		list.stream().sorted().forEach(e -> System.out.print(e + " "));
 
-		// Sorting Algo
+		// Sorting Algorithms
 //		BubbleSort.sort(arr);
 //		SelectionSort.sort(arr, -1);
 		InsertionSort.sort(arr);
