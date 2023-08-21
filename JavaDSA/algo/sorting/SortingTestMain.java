@@ -11,7 +11,7 @@ public class SortingTestMain {
 		List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
 		// Before
 		System.out.println("Before: ");
-		Arrays.stream(arr).forEach(e -> System.out.print(e + " "));
+		Arrays.stream(arr).forEach(e -> System.out.print(e + "  "));
 		
 		//Using Stream to get sorted for comparing the answer
 		System.out.println("\n Collection SOrt: ");
