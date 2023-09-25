@@ -4,12 +4,11 @@ public class MergeSort {
 
 	public static int[] sort(int[] arr) {
 		int n = arr.length;
-		divide(arr, 0, n-1);
+		divide(arr, 0, n - 1);
 		return arr;
 	}
 
 	private static void divide(int[] arr, int l, int r) {
-
 		if (l >= r)
 			return;
 
@@ -28,8 +27,7 @@ public class MergeSort {
 		int idx = 0;
 
 		while (p1 <= mid && p2 <= r) {
-			if (arr[p1] 
-					<= arr[p2])
+			if (arr[p1] <= arr[p2])
 				merged[idx++] = arr[p1++];
 			else
 				merged[idx++] = arr[p2++];
