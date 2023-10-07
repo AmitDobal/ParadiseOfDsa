@@ -51,5 +51,18 @@ public class MyLinkedList {
 			
 		}
 	}
+	
+	public void printReverse() {
+		Node temp = root;
+		System.out.print("[");
+		printReverseHelper(temp);
+		System.out.print("]");
+		
+	}
+	public void printReverseHelper(Node head) {
+		if(null == head) return;
+		printReverseHelper(head.next);
+		System.out.print(head.data + " ");
+	}
 
 }

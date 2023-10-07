@@ -14,5 +14,6 @@ public class LinkedListMain {
 		
 		list.print();
 		list.middleValue();
+		list.printReverse();
 	}
 }
