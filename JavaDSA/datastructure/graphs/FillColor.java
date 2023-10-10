@@ -1,11 +1,8 @@
-package practice.problems;
+package datastructure.graphs;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-public class RoughMain {
+public class FillColor {
 	public static void main(String[] args) {
 		int[][] image = { { 0, 0, 0 }, { 0, 0, 0 } };
 		int[][] image1 = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
@@ -27,7 +24,8 @@ public class RoughMain {
 
 	private static int[][] helper(int[][] image, int sr, int sc, int color, int currColor, int[][] isVisited) {
 		// base condition
-		if (sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length || image[sr][sc] != currColor || isVisited[sr][sc] == -1)
+		if (sr < 0 || sc < 0 || sr >= image.length || sc >= image[0].length || image[sr][sc] != currColor
+				|| isVisited[sr][sc] == -1)
 			return image;
 
 		// mark the current cell with the color
