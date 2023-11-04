@@ -5,7 +5,7 @@ public class TreeMain {
 		MyTree tree = new MyTree(10);
 
 		tree.root.left = new TreeNode(20);
-		tree.root.right = new TreeNode(30, new TreeNode(40, new TreeNode(60), new TreeNode(70)),
+		tree.root.right = new TreeNode(30, new TreeNode(400, new TreeNode(60), new TreeNode(70)),
 				new TreeNode(50, new TreeNode(80)));
 
 		System.out.println("Inorder: ");
@@ -32,6 +32,12 @@ public class TreeMain {
 		
 		System.out.println("Level Order traversal Line By Line: ");
 		tree.printLevelOrderByLine2();
+		System.out.println();
+		
+		System.out.print("Size of the tree: " + tree.size(tree.root));
+		System.out.println();
+		
+		System.out.print("Max Value of the tree: " + tree.maxValue(tree.root));
 		System.out.println();
 	}
 }

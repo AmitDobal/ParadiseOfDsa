@@ -112,4 +112,19 @@ public class MyTree {
 		}
 	}
 
+	// Size
+	public int size(TreeNode root) {
+		if (root == null)
+			return 0;
+		return size(root.left) + size(root.right) + 1;
+	}
+
+	// Max value
+	public int maxValue(TreeNode root) {
+		if (root == null)
+			return 0;
+
+		return Math.max(root.data, Math.max(maxValue(root.left), maxValue(root.right)));
+	}
+
 }
